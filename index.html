@@ -34,11 +34,13 @@ body{
   align-items:center;
   justify-content:center;
   opacity:0;
+  visibility:hidden;
   pointer-events:none;
   transition:opacity .45s ease;
 }
 .slide.active{
   opacity:1;
+  visibility:visible;
   pointer-events:auto;
 }
 .canvas{
@@ -6771,6 +6773,52 @@ svg{
 .slide.active .closing-item:nth-child(6){animation-delay:1.94s}
 .slide.active .closing-strip{animation:takeawayIn .62s ease forwards 2.15s}
 
+/* Keep the final governance section responsive during manual playback. */
+.slide.active .scenario-slide .scenario-card,
+.slide.active .scenario-slide .scenario-fill,
+.slide.active .scenario-slide .valuation-formula,
+.slide.active .post-logic-slide .logic-flow::before,
+.slide.active .post-logic-slide .logic-node,
+.slide.active .post-logic-slide .logic-arrow,
+.slide.active .post-logic-slide .logic-lever,
+.slide.active .control-slide .control-head,
+.slide.active .control-slide .control-cell,
+.slide.active .control-slide .control-line,
+.slide.active .account-slide .quarter,
+.slide.active .account-slide .quarter::before,
+.slide.active .account-slide .kpi-row,
+.slide.active .account-slide .kpi-seg,
+.slide.active .account-slide .signal-rules,
+.slide.active .conclusion-slide .loop-path .orbit,
+.slide.active .conclusion-slide .loop-core,
+.slide.active .conclusion-slide .takeaway-node,
+.slide.active .conclusion-slide .closing-thesis::before,
+.slide.active .conclusion-slide .closing-kicker,
+.slide.active .conclusion-slide .closing-line,
+.slide.active .conclusion-slide .closing-underline,
+.slide.active .conclusion-slide .closing-list,
+.slide.active .conclusion-slide .closing-item,
+.slide.active .conclusion-slide .closing-strip{
+  animation-delay:.08s!important;
+}
+.slide.active .scenario-slide .scenario-card::after,
+.slide.active .scenario-slide .scenario-fill::after,
+.slide.active .scenario-slide .scenario-prob,
+.slide.active .scenario-slide .valuation-formula::before,
+.slide.active .post-logic-slide .logic-node::after,
+.slide.active .post-logic-slide .logic-lever::before,
+.slide.active .control-slide .control-stage::before,
+.slide.active .control-slide .control-cell::after,
+.slide.active .control-slide .control-dot::after,
+.slide.active .control-slide .control-cell.release .control-dot,
+.slide.active .control-slide .control-cell.revise .control-dot,
+.slide.active .control-slide .control-cell.hold .control-dot,
+.slide.active .account-slide .signal-light,
+.slide.active .conclusion-slide .takeaway-node::before{
+  animation-delay:.45s!important;
+  animation-iteration-count:1!important;
+}
+
 @keyframes reportTransferIn{
   0%{opacity:0;transform:scale(.86) translateX(-8px)}
   70%{opacity:1;transform:scale(1.04) translateX(0)}
@@ -9427,7 +9475,7 @@ svg{
 
 
 <div class="page-indicator">
-  <span id="pageNow">1</span> / <span id="pageTotal">24</span>
+  <span id="pageNow">1</span> / <span id="pageTotal">23</span>
 </div>
 
 <script>
@@ -9515,12 +9563,16 @@ function animateCounters(slide){
 }
 
 function showSlide(index){
+  if(index < 0 || index >= slides.length || index === current) return;
   resetCounters(slides[current]);
   slides[current].classList.remove("active");
   current = index;
-  slides[current].classList.add("active");
+  const nextSlide = slides[current];
+  nextSlide.classList.remove("active");
+  void nextSlide.offsetWidth;
+  nextSlide.classList.add("active");
   pageNow.textContent = current + 1;
-  animateCounters(slides[current]);
+  animateCounters(nextSlide);
 }
 
 animateCounters(slides[current]);
