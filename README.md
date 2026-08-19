@@ -2,6 +2,8 @@
 
 An interactive HTML presentation examining how boards can evaluate, govern, and monitor AI-related intangible assets in mergers and acquisitions.
 
+## [View the Live Presentation](https://jiarong-xu.github.io/ai-valuation-governance-ma/)
+
 ![Presentation preview](preview.png)
 
 ## Project Overview
@@ -35,7 +37,7 @@ In short:
 
 ## How to View
 
-Open `index.html` in a browser. Use the **left/right arrow keys** or **spacebar** to navigate the slides.
+Open the [live presentation](https://jiarong-xu.github.io/ai-valuation-governance-ma/) in a browser. Use the **left/right arrow keys** or **spacebar** on a computer, or **swipe left/right** on a touch device. For the best mobile experience, use landscape orientation.
 
 ## Portfolio Note
 

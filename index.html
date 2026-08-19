@@ -42,10 +42,11 @@ body{
 }
 .canvas{
   position:relative;
-  width:94vw;
-  height:52.875vw;
-  max-height:88vh;
-  max-width:156.44vh;
+  width:1504px;
+  height:846px;
+  flex:0 0 auto;
+  transform-origin:center center;
+  will-change:transform;
   overflow:hidden;
   background:var(--cream);
   box-shadow:0 18px 45px rgba(0,0,0,.22);
@@ -63,7 +64,7 @@ body{
 }
 .ucsd-main{
   font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(28px,3.1vw,52px);
+  font-size:clamp(28px,49.6px,52px);
   line-height:1;
   font-weight:500;
   white-space:nowrap;
@@ -75,7 +76,7 @@ body{
   margin:8px 0 8px 2px;
 }
 .ucsd-sub{
-  font-size:clamp(9px,.85vw,14px);
+  font-size:clamp(9px,13.6px,14px);
   font-weight:800;
   letter-spacing:.4px;
   white-space:nowrap;
@@ -104,7 +105,7 @@ body{
   left:7.5%;
   bottom:3.1%;
   color:#777;
-  font-size:clamp(10px,.78vw,14px);
+  font-size:clamp(10px,12.48px,14px);
   z-index:10;
 }
 svg{
@@ -150,7 +151,7 @@ svg{
   font-weight:800;
   letter-spacing:.3px;
   line-height:1.3;
-  font-size:clamp(14px,1.25vw,21px);
+  font-size:clamp(14px,20px,21px);
 }
 .cover-school span{color:var(--gold)}
 .cover-title{
@@ -160,7 +161,7 @@ svg{
   z-index:3;
   color:white;
   font-weight:800;
-  font-size:clamp(25px,2.55vw,44px);
+  font-size:clamp(25px,40.8px,44px);
   line-height:1.3;
   margin:0;
   max-width:45%;
@@ -181,7 +182,7 @@ svg{
   z-index:3;
   margin:0;
   color:white;
-  font-size:clamp(15px,1.28vw,22px);
+  font-size:clamp(15px,20.48px,22px);
   line-height:1.35;
   font-weight:800;
 }
@@ -238,7 +239,7 @@ svg{
 }
 .agenda-title{
   margin:0;
-  font-size:clamp(40px,3.9vw,70px);
+  font-size:clamp(40px,62.4px,70px);
   line-height:1;
   color:var(--blue);
   font-weight:900;
@@ -343,7 +344,7 @@ svg{
 }
 .agenda-text{
   color:var(--blue);
-  font-size:clamp(14px,1.08vw,21px);
+  font-size:clamp(14px,17.28px,21px);
   line-height:1.12;
   font-weight:900;
   padding-left:5px;
@@ -357,7 +358,7 @@ svg{
   color:white;
   padding:16px 20px;
   border-radius:14px;
-  font-size:clamp(11px,.85vw,15px);
+  font-size:clamp(11px,13.6px,15px);
   line-height:1.35;
   font-weight:700;
   z-index:6;
@@ -425,7 +426,7 @@ svg{
   z-index:4;
 }
 .section-label{
-  font-size:clamp(10px,.85vw,14px);
+  font-size:clamp(10px,13.6px,14px);
   font-weight:900;
   color:var(--blue);
   letter-spacing:.3px;
@@ -436,7 +437,7 @@ svg{
 }
 .section-label span{
   color:var(--gold);
-  font-size:clamp(13px,1vw,17px);
+  font-size:clamp(13px,16px,17px);
   margin-right:8px;
 }
 .slide.active .section-label{
@@ -445,7 +446,7 @@ svg{
 .value-title{
   margin:0;
   color:var(--blue);
-  font-size:clamp(28px,2.5vw,43px);
+  font-size:clamp(28px,40px,43px);
   line-height:1.12;
   font-weight:900;
   max-width:680px;
@@ -471,7 +472,7 @@ svg{
 .value-intro{
   margin:0 0 10px;
   color:#444;
-  font-size:clamp(13px,1.02vw,18px);
+  font-size:clamp(13px,16.32px,18px);
   line-height:1.32;
   max-width:650px;
   opacity:0;
@@ -483,7 +484,7 @@ svg{
 .asset-heading{
   margin:8px 0 12px;
   color:var(--blue);
-  font-size:clamp(16px,1.2vw,22px);
+  font-size:clamp(16px,19.2px,22px);
   font-weight:900;
   opacity:0;
   transform:translateY(16px);
@@ -526,7 +527,7 @@ svg{
 }
 .asset-name{
   color:#222;
-  font-size:clamp(10px,.82vw,15px);
+  font-size:clamp(10px,13.12px,15px);
   line-height:1.12;
   font-weight:700;
 }
@@ -566,7 +567,7 @@ svg{
 .warning-text strong{
   display:block;
   color:var(--blue);
-  font-size:clamp(14px,1vw,19px);
+  font-size:clamp(14px,16px,19px);
   line-height:1.18;
   margin-bottom:5px;
   font-weight:900;
@@ -574,7 +575,7 @@ svg{
 .warning-text span{
   display:block;
   color:var(--blue);
-  font-size:clamp(12px,.88vw,16px);
+  font-size:clamp(12px,14.08px,16px);
   line-height:1.22;
   font-weight:700;
 }
@@ -608,7 +609,7 @@ svg{
 }
 .question-text{
   color:var(--blue);
-  font-size:clamp(12px,.9vw,16px);
+  font-size:clamp(12px,14.4px,16px);
   line-height:1.22;
 }
 /* ================= SLIDE 4 CSS END ================= */
@@ -630,7 +631,7 @@ svg{
   z-index:3;
 }
 .journey-label{
-  font-size:clamp(10px,.85vw,14px);
+  font-size:clamp(10px,13.6px,14px);
   font-weight:900;
   letter-spacing:.25px;
   color:var(--blue);
@@ -643,7 +644,7 @@ svg{
 .journey-title{
   margin:28px 0 0;
   color:var(--blue);
-  font-size:clamp(34px,3.25vw,58px);
+  font-size:clamp(34px,52px,58px);
   line-height:1.05;
   font-weight:900;
   opacity:0;
@@ -664,7 +665,7 @@ svg{
   margin:0;
   max-width:66%;
   color:#555;
-  font-size:clamp(15px,1.28vw,23px);
+  font-size:clamp(15px,20.48px,23px);
   line-height:1.28;
   opacity:0;
   transform:translateY(16px);
@@ -689,7 +690,7 @@ svg{
   border-radius:999px;
   padding:11px 15px 11px 12px;
   color:var(--blue);
-  font-size:clamp(11px,.82vw,15px);
+  font-size:clamp(11px,13.12px,15px);
   font-weight:900;
   opacity:0;
   transform:translateX(45px) translateY(-8px);
@@ -805,14 +806,14 @@ svg{
 }
 .journey-step-title{
   color:var(--blue);
-  font-size:clamp(16px,1.35vw,25px);
+  font-size:clamp(16px,21.6px,25px);
   font-weight:900;
   line-height:1.1;
   margin-bottom:6px;
 }
 .journey-step-note{
   color:#555;
-  font-size:clamp(10px,.72vw,13px);
+  font-size:clamp(10px,11.52px,13px);
   line-height:1.15;
   font-weight:700;
   max-width:150px;
@@ -857,7 +858,7 @@ svg{
   fill:none;
 }
 .takeaway-text{
-  font-size:clamp(17px,1.3vw,24px);
+  font-size:clamp(17px,20.8px,24px);
   line-height:1.2;
   font-weight:800;
 }
@@ -887,7 +888,7 @@ svg{
   z-index:3;
 }
 .lens-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -902,7 +903,7 @@ svg{
 .lens-title{
   margin:22px 0 0;
   color:var(--blue);
-  font-size:clamp(29px,2.72vw,49px);
+  font-size:clamp(29px,43.52px,49px);
   line-height:1.05;
   font-weight:900;
   opacity:0;
@@ -925,7 +926,7 @@ svg{
   margin:0;
   max-width:90%;
   color:#555;
-  font-size:clamp(13px,1.02vw,18px);
+  font-size:clamp(13px,16.32px,18px);
   line-height:1.22;
   white-space:nowrap;
   opacity:0;
@@ -975,7 +976,7 @@ svg{
 }
 .center-title{
   color:white;
-  font-size:clamp(13px,.95vw,17px);
+  font-size:clamp(13px,15.2px,17px);
   line-height:1.05;
   font-weight:900;
   text-align:center;
@@ -983,7 +984,7 @@ svg{
 }
 .center-sub{
   color:var(--gold);
-  font-size:clamp(8px,.64vw,11px);
+  font-size:clamp(8px,10.24px,11px);
   font-weight:900;
   letter-spacing:.9px;
 }
@@ -1040,7 +1041,7 @@ svg{
   align-items:center;
   justify-content:center;
   padding:0 18px;
-  font-size:clamp(19px,1.66vw,31px);
+  font-size:clamp(19px,26.56px,31px);
   line-height:1;
   font-weight:900;
   white-space:nowrap;
@@ -1055,7 +1056,7 @@ svg{
   display:block;
   margin-left:0;
   margin-top:7px;
-  font-size:clamp(11px,.95vw,17px);
+  font-size:clamp(11px,15.2px,17px);
   line-height:1.05;
   font-weight:800;
   white-space:nowrap;
@@ -1139,7 +1140,7 @@ svg{
 .control-text h3{
   margin:0 0 3px;
   color:var(--blue);
-  font-size:clamp(11px,.82vw,15px);
+  font-size:clamp(11px,13.12px,15px);
   line-height:1.04;
   font-weight:900;
   white-space:nowrap;
@@ -1147,7 +1148,7 @@ svg{
 .control-text p{
   margin:0;
   color:#555;
-  font-size:clamp(8.2px,.62vw,11.3px);
+  font-size:clamp(8.2px,9.92px,11.3px);
   line-height:1.13;
   font-weight:600;
 }
@@ -1155,7 +1156,7 @@ svg{
   position:absolute;
   left:50%;
   top:67.2%;
-  width:clamp(260px,20vw,370px);
+  width:clamp(260px,320px,370px);
   min-height:78px;
   border-radius:14px;
   background:linear-gradient(135deg,rgba(11,45,92,.78),rgba(11,45,92,.66));
@@ -1170,7 +1171,7 @@ svg{
   box-shadow:0 16px 30px rgba(0,0,0,.18),0 0 0 10px rgba(212,160,23,.06),inset 0 1px 0 rgba(255,255,255,.24);
   backdrop-filter:blur(1.5px) saturate(125%);
   -webkit-backdrop-filter:blur(1.5px) saturate(125%);
-  font-size:clamp(10px,.78vw,14px);
+  font-size:clamp(10px,12.48px,14px);
   font-weight:800;
   line-height:1.18;
   opacity:0;
@@ -1190,7 +1191,7 @@ svg{
   z-index:1;
   display:block;
   color:white;
-  font-size:clamp(12px,.9vw,16px);
+  font-size:clamp(12px,14.4px,16px);
   line-height:1.08;
   white-space:nowrap;
 }
@@ -1250,7 +1251,7 @@ svg{
   z-index:3;
 }
 .radar-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -1265,7 +1266,7 @@ svg{
 .radar-title{
   margin:22px 0 0;
   color:var(--blue);
-  font-size:clamp(25px,2.35vw,42px);
+  font-size:clamp(25px,37.6px,42px);
   line-height:1.08;
   font-weight:900;
   max-width:70%;
@@ -1370,7 +1371,7 @@ svg{
   margin-bottom:9px;
 }
 .radar-center-title{
-  font-size:clamp(14px,.98vw,18px);
+  font-size:clamp(14px,15.68px,18px);
   line-height:1.05;
   font-weight:900;
   letter-spacing:.4px;
@@ -1378,7 +1379,7 @@ svg{
 .radar-center-sub{
   margin-top:8px;
   color:var(--gold);
-  font-size:clamp(8px,.62vw,11px);
+  font-size:clamp(8px,9.92px,11px);
   font-weight:900;
   letter-spacing:1.4px;
 }
@@ -1433,7 +1434,7 @@ svg{
 .radar-node h3{
   margin:0 0 5px;
   color:var(--blue);
-  font-size:clamp(14px,1.08vw,19.5px);
+  font-size:clamp(14px,17.28px,19.5px);
   line-height:1.05;
   font-weight:900;
   white-space:nowrap;
@@ -1441,7 +1442,7 @@ svg{
 .radar-node p{
   margin:0;
   color:#555;
-  font-size:clamp(10px,.78vw,13.5px);
+  font-size:clamp(10px,12.48px,13.5px);
   line-height:1.1;
   font-weight:650;
 }
@@ -1461,7 +1462,7 @@ svg{
   background:rgba(11,45,92,.88);
   border:1.5px solid rgba(212,160,23,.72);
   color:white;
-  font-size:clamp(13px,1.05vw,18px);
+  font-size:clamp(13px,16.8px,18px);
   line-height:1.2;
   font-weight:850;
   box-shadow:0 15px 30px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.18);
@@ -1531,7 +1532,7 @@ svg{
   z-index:3;
 }
 .shift-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -1546,7 +1547,7 @@ svg{
 .shift-title{
   margin:22px 0 0;
   color:var(--blue);
-  font-size:clamp(30px,2.8vw,52px);
+  font-size:clamp(30px,44.8px,52px);
   line-height:1.05;
   font-weight:900;
   white-space:nowrap;
@@ -1605,7 +1606,7 @@ svg{
   justify-content:center;
   gap:10px;
   color:white;
-  font-size:clamp(17px,1.18vw,23px);
+  font-size:clamp(17px,18.88px,23px);
   font-weight:900;
   letter-spacing:.2px;
   text-align:center;
@@ -1628,7 +1629,7 @@ svg{
 .shift-endpoint-kicker{
   margin:0 0 8px;
   color:var(--blue);
-  font-size:clamp(14px,.98vw,18px);
+  font-size:clamp(14px,15.68px,18px);
   line-height:1.12;
   font-weight:900;
   white-space:nowrap;
@@ -1636,7 +1637,7 @@ svg{
 .shift-endpoint-note{
   margin:0;
   color:#555;
-  font-size:clamp(11.6px,.88vw,15.5px);
+  font-size:clamp(11.6px,14.08px,15.5px);
   line-height:1.12;
   font-weight:700;
 }
@@ -1763,7 +1764,7 @@ svg{
 .shift-step h3{
   margin:0 0 7px;
   color:var(--blue);
-  font-size:clamp(15px,1.08vw,20px);
+  font-size:clamp(15px,17.28px,20px);
   line-height:1.04;
   font-weight:900;
   white-space:nowrap;
@@ -1771,7 +1772,7 @@ svg{
 .shift-step p{
   margin:0;
   color:#555;
-  font-size:clamp(11.8px,.92vw,16.5px);
+  font-size:clamp(11.8px,14.72px,16.5px);
   line-height:1.1;
   font-weight:700;
 }
@@ -1794,7 +1795,7 @@ svg{
   place-items:center;
   text-align:center;
   z-index:7;
-  font-size:clamp(14px,.95vw,18px);
+  font-size:clamp(14px,15.2px,18px);
   line-height:1.04;
   font-weight:900;
   box-shadow:0 14px 28px rgba(0,0,0,.18),0 0 0 16px rgba(212,160,23,.1);
@@ -1803,7 +1804,7 @@ svg{
 .shift-center span{
   display:block;
   color:var(--gold);
-  font-size:clamp(8px,.6vw,11px);
+  font-size:clamp(8px,9.6px,11px);
   letter-spacing:1.4px;
   margin-top:7px;
 }
@@ -1847,7 +1848,7 @@ svg{
   justify-content:center;
   text-align:center;
   padding:13px 34px;
-  font-size:clamp(18px,1.26vw,25px);
+  font-size:clamp(18px,20.16px,25px);
   line-height:1.08;
   font-weight:850;
   white-space:nowrap;
@@ -1956,7 +1957,7 @@ svg{
   z-index:3;
 }
 .break-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -1971,7 +1972,7 @@ svg{
 .break-title{
   margin:24px 0 0;
   color:var(--blue);
-  font-size:clamp(30px,2.75vw,52px);
+  font-size:clamp(30px,44px,52px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -2087,18 +2088,18 @@ svg{
 .break-result h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(18px,1.25vw,24px);
+  font-size:clamp(18px,20px,24px);
   line-height:1.02;
   font-weight:900;
   white-space:nowrap;
 }
 .break-module:nth-of-type(2) h3{
-  font-size:clamp(16px,1.06vw,20.5px);
+  font-size:clamp(16px,16.96px,20.5px);
 }
 .break-module h3 span{
   display:block;
   color:var(--gold);
-  font-size:clamp(10px,.76vw,13.5px);
+  font-size:clamp(10px,12.16px,13.5px);
   line-height:1.18;
   letter-spacing:.9px;
   margin-top:5px;
@@ -2117,7 +2118,7 @@ svg{
   gap:12px;
   align-items:start;
   color:#515151;
-  font-size:clamp(12.5px,.95vw,17px);
+  font-size:clamp(12.5px,15.2px,17px);
   line-height:1.08;
   font-weight:780;
 }
@@ -2231,7 +2232,7 @@ svg{
   margin:0;
   color:var(--blue);
   text-align:center;
-  font-size:clamp(15px,1.08vw,20px);
+  font-size:clamp(15px,17.28px,20px);
   line-height:1.1;
   font-weight:850;
   max-width:96%;
@@ -2255,7 +2256,7 @@ svg{
   justify-content:center;
   text-align:center;
   padding:14px 30px;
-  font-size:clamp(18px,1.32vw,26px);
+  font-size:clamp(18px,21.12px,26px);
   line-height:1.06;
   font-weight:850;
   white-space:nowrap;
@@ -2337,7 +2338,7 @@ svg{
   z-index:3;
 }
 .judgment-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -2352,7 +2353,7 @@ svg{
 .judgment-title{
   margin:24px 0 0;
   color:var(--blue);
-  font-size:clamp(24px,2.08vw,39px);
+  font-size:clamp(24px,33.28px,39px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -2376,7 +2377,7 @@ svg{
   margin:15px 0 0;
   max-width:86%;
   color:#4f4f4f;
-  font-size:clamp(13px,.95vw,18px);
+  font-size:clamp(13px,15.2px,18px);
   line-height:1.1;
   font-weight:650;
   white-space:nowrap;
@@ -2463,7 +2464,7 @@ svg{
 .judgment-card-copy h3{
   margin:0 0 6px;
   color:var(--blue);
-  font-size:clamp(16px,1.14vw,22px);
+  font-size:clamp(16px,18.24px,22px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -2471,7 +2472,7 @@ svg{
 .judgment-card-copy p{
   margin:0;
   color:#555;
-  font-size:clamp(11.4px,.86vw,15.8px);
+  font-size:clamp(11.4px,13.76px,15.8px);
   line-height:1.13;
   font-weight:720;
 }
@@ -2556,14 +2557,14 @@ svg{
   margin-bottom:10px;
 }
 .judgment-core-title{
-  font-size:clamp(14px,1vw,19px);
+  font-size:clamp(14px,16px,19px);
   line-height:1.02;
   font-weight:900;
 }
 .judgment-core-sub{
   margin-top:8px;
   color:var(--gold);
-  font-size:clamp(8px,.62vw,11.5px);
+  font-size:clamp(8px,9.92px,11.5px);
   font-weight:900;
   letter-spacing:1.3px;
 }
@@ -2623,7 +2624,7 @@ svg{
   margin:0;
 }
 .judgment-question .not{
-  font-size:clamp(14px,1.02vw,19px);
+  font-size:clamp(14px,16.32px,19px);
   line-height:1.16;
   font-weight:800;
   opacity:.88;
@@ -2632,7 +2633,7 @@ svg{
   margin-top:22px;
   padding-top:18px;
   border-top:5px solid var(--gold);
-  font-size:clamp(18px,1.42vw,28px);
+  font-size:clamp(18px,22.72px,28px);
   line-height:1.16;
   font-weight:900;
 }
@@ -2656,7 +2657,7 @@ svg{
   justify-content:center;
   text-align:center;
   padding:14px 30px;
-  font-size:clamp(17px,1.24vw,24px);
+  font-size:clamp(17px,19.84px,24px);
   line-height:1.08;
   font-weight:850;
   white-space:nowrap;
@@ -2746,7 +2747,7 @@ svg{
   z-index:3;
 }
 .risk-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -2761,7 +2762,7 @@ svg{
 .risk-title{
   margin:24px 0 0;
   color:var(--blue);
-  font-size:clamp(30px,2.66vw,50px);
+  font-size:clamp(30px,42.56px,50px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -2785,7 +2786,7 @@ svg{
   margin:16px 0 0;
   max-width:82%;
   color:#4f4f4f;
-  font-size:clamp(14px,1.03vw,20px);
+  font-size:clamp(14px,16.48px,20px);
   line-height:1.14;
   font-weight:650;
   white-space:nowrap;
@@ -2845,19 +2846,19 @@ svg{
 .risk-panel-head h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(16px,1.16vw,22px);
+  font-size:clamp(16px,18.56px,22px);
   line-height:1;
   font-weight:900;
   white-space:nowrap;
 }
 .risk-response .risk-panel-head h3{
-  font-size:clamp(14px,.98vw,19px);
+  font-size:clamp(14px,15.68px,19px);
 }
 .risk-chip{
   border-radius:999px;
   background:rgba(212,160,23,.17);
   color:#b18100;
-  font-size:clamp(8.6px,.62vw,11.7px);
+  font-size:clamp(8.6px,9.92px,11.7px);
   line-height:1;
   font-weight:950;
   letter-spacing:.62px;
@@ -2866,7 +2867,7 @@ svg{
   box-shadow:inset 0 0 0 1px rgba(212,160,23,.12);
 }
 .risk-response .risk-chip{
-  font-size:clamp(7.6px,.54vw,10px);
+  font-size:clamp(7.6px,8.64px,10px);
   padding:8px 8px;
   letter-spacing:.45px;
 }
@@ -2889,7 +2890,7 @@ svg{
   justify-content:flex-start;
   padding:9px;
   color:var(--blue);
-  font-size:clamp(9px,.7vw,13px);
+  font-size:clamp(9px,11.2px,13px);
   line-height:1.02;
   font-weight:850;
   overflow:hidden;
@@ -2920,7 +2921,7 @@ svg{
   display:flex;
   justify-content:space-between;
   color:#666;
-  font-size:clamp(8px,.6vw,11px);
+  font-size:clamp(8px,9.6px,11px);
   font-weight:800;
   letter-spacing:.3px;
   text-transform:uppercase;
@@ -2986,7 +2987,7 @@ svg{
 .blindspot-copy h4{
   margin:0 0 3px;
   color:var(--blue);
-  font-size:clamp(14px,.95vw,17.5px);
+  font-size:clamp(14px,15.2px,17.5px);
   line-height:1.02;
   font-weight:900;
   white-space:nowrap;
@@ -2994,7 +2995,7 @@ svg{
 .blindspot-copy p{
   margin:0;
   color:#555;
-  font-size:clamp(10px,.74vw,13.4px);
+  font-size:clamp(10px,11.84px,13.4px);
   line-height:1.08;
   font-weight:740;
 }
@@ -3007,7 +3008,7 @@ svg{
   padding:6px 7px;
   background:var(--blue);
   color:white;
-  font-size:clamp(7.5px,.52vw,9.5px);
+  font-size:clamp(7.5px,8.32px,9.5px);
   line-height:1;
   font-weight:900;
   letter-spacing:.5px;
@@ -3027,7 +3028,7 @@ svg{
   gap:13px;
   align-items:start;
   color:#555;
-  font-size:clamp(12.4px,.92vw,16.5px);
+  font-size:clamp(12.4px,14.72px,16.5px);
   line-height:1.1;
   font-weight:780;
   opacity:0;
@@ -3090,7 +3091,7 @@ svg{
   justify-content:center;
   text-align:center;
   padding:14px 30px;
-  font-size:clamp(16px,1.18vw,23px);
+  font-size:clamp(16px,18.88px,23px);
   line-height:1.08;
   font-weight:850;
   white-space:nowrap;
@@ -3169,7 +3170,7 @@ svg{
   z-index:3;
 }
 .capital-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -3184,7 +3185,7 @@ svg{
 .capital-title{
   margin:24px 0 0;
   color:var(--blue);
-  font-size:clamp(30px,2.62vw,50px);
+  font-size:clamp(30px,41.92px,50px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -3208,7 +3209,7 @@ svg{
   margin:16px 0 0;
   max-width:88%;
   color:#4f4f4f;
-  font-size:clamp(14px,1.03vw,20px);
+  font-size:clamp(14px,16.48px,20px);
   line-height:1.14;
   font-weight:650;
   white-space:nowrap;
@@ -3318,7 +3319,7 @@ svg{
 .capital-node h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(15px,.98vw,19px);
+  font-size:clamp(15px,15.68px,19px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -3330,7 +3331,7 @@ svg{
   display:block;
   margin-top:5px;
   color:var(--gold);
-  font-size:clamp(8px,.55vw,10.5px);
+  font-size:clamp(8px,8.8px,10.5px);
   line-height:1;
   font-weight:950;
   letter-spacing:.45px;
@@ -3349,7 +3350,7 @@ svg{
   grid-template-columns:22px 1fr;
   gap:11px;
   color:#555;
-  font-size:clamp(12px,.9vw,16.6px);
+  font-size:clamp(12px,14.4px,16.6px);
   line-height:1.07;
   font-weight:780;
 }
@@ -3406,7 +3407,7 @@ svg{
 .capital-trigger h4{
   margin:0 0 4px;
   color:var(--gold);
-  font-size:clamp(10px,.74vw,13px);
+  font-size:clamp(10px,11.84px,13px);
   line-height:1;
   font-weight:950;
   letter-spacing:.7px;
@@ -3416,7 +3417,7 @@ svg{
 .capital-trigger p{
   margin:0;
   color:white;
-  font-size:clamp(9.5px,.72vw,13px);
+  font-size:clamp(9.5px,11.52px,13px);
   line-height:1.1;
   font-weight:760;
 }
@@ -3469,7 +3470,7 @@ svg{
 }
 .erosion-head h3{
   margin:0;
-  font-size:clamp(16px,1.12vw,22px);
+  font-size:clamp(16px,17.92px,22px);
   line-height:1.02;
   font-weight:900;
 }
@@ -3501,13 +3502,13 @@ svg{
   color:var(--blue);
   display:grid;
   place-items:center;
-  font-size:clamp(10px,.7vw,13px);
+  font-size:clamp(10px,11.2px,13px);
   font-weight:950;
   box-shadow:0 0 0 6px rgba(212,160,23,.12);
 }
 .erosion-step p{
   margin:0;
-  font-size:clamp(11px,.82vw,15px);
+  font-size:clamp(11px,13.12px,15px);
   line-height:1.1;
   font-weight:800;
 }
@@ -3535,7 +3536,7 @@ svg{
   margin:0 24px 24px;
   padding-top:14px;
   border-top:2px solid rgba(212,160,23,.78);
-  font-size:clamp(14px,1.02vw,19px);
+  font-size:clamp(14px,16.32px,19px);
   line-height:1.15;
   font-weight:900;
   text-align:center;
@@ -3558,7 +3559,7 @@ svg{
   gap:16px;
   align-items:center;
   padding:12px 28px 12px 20px;
-  font-size:clamp(17px,1.28vw,25px);
+  font-size:clamp(17px,20.48px,25px);
   line-height:1.08;
   font-weight:850;
   white-space:nowrap;
@@ -3662,7 +3663,7 @@ svg{
   z-index:3;
 }
 .case-label{
-  font-size:clamp(10px,.82vw,14px);
+  font-size:clamp(10px,13.12px,14px);
   font-weight:900;
   color:var(--blue);
   white-space:nowrap;
@@ -3677,7 +3678,7 @@ svg{
 .case-title{
   margin:24px 0 0;
   color:var(--blue);
-  font-size:clamp(30px,2.58vw,50px);
+  font-size:clamp(30px,41.28px,50px);
   line-height:1.03;
   font-weight:900;
   white-space:nowrap;
@@ -3685,7 +3686,7 @@ svg{
   opacity:0;
   transform:translateY(18px);
 }
-.case-title.short{font-size:clamp(31px,2.72vw,52px)}
+.case-title.short{font-size:clamp(31px,43.52px,52px)}
 .slide.active .case-title{animation:fadeUp .7s ease forwards .22s}
 .case-title-line{
   width:205px;
@@ -3702,7 +3703,7 @@ svg{
   margin:14px 0 0;
   max-width:80%;
   color:#4f4f4f;
-  font-size:clamp(13.5px,1vw,19px);
+  font-size:clamp(13.5px,16px,19px);
   line-height:1.16;
   font-weight:680;
   white-space:nowrap;
@@ -3735,7 +3736,7 @@ svg{
   gap:16px;
   align-items:center;
   padding:12px 28px 12px 20px;
-  font-size:clamp(19px,1.42vw,28px);
+  font-size:clamp(19px,22.72px,28px);
   line-height:1.08;
   font-weight:850;
   white-space:nowrap;
@@ -3781,7 +3782,7 @@ svg{
   grid-template-columns:44px 1fr;
   gap:13px;
   padding:8px 22px 8px 16px;
-  font-size:clamp(16.5px,1.16vw,23px);
+  font-size:clamp(16.5px,18.56px,23px);
 }
 .case-setup-slide .case-takeaway-icon{
   width:44px;
@@ -3846,7 +3847,7 @@ svg{
 .case-stat h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(21px,1.62vw,32px);
+  font-size:clamp(21px,25.92px,32px);
   line-height:1;
   font-weight:950;
   white-space:nowrap;
@@ -3855,7 +3856,7 @@ svg{
 .case-stat p{
   margin:7px 0 0;
   color:var(--blue);
-  font-size:clamp(10px,.78vw,14px);
+  font-size:clamp(10px,12.48px,14px);
   line-height:1.1;
   font-weight:820;
 }
@@ -3877,7 +3878,7 @@ svg{
   align-items:center;
   justify-content:center;
   padding:9px 16px;
-  font-size:clamp(12px,.9vw,17px);
+  font-size:clamp(12px,14.4px,17px);
   line-height:1.05;
   font-weight:950;
   text-align:center;
@@ -3934,7 +3935,7 @@ svg{
   left:50%;
   transform:translateX(-50%);
   color:#111;
-  font-size:clamp(12px,.9vw,17px);
+  font-size:clamp(12px,14.4px,17px);
   font-weight:950;
 }
 .case-axis-label{
@@ -3945,7 +3946,7 @@ svg{
   width:120px;
   color:#333;
   text-align:center;
-  font-size:clamp(8.5px,.62vw,11.5px);
+  font-size:clamp(8.5px,9.92px,11.5px);
   line-height:1.1;
   font-weight:720;
 }
@@ -3966,7 +3967,7 @@ svg{
   left:38%;
   top:-29px;
   color:var(--gold);
-  font-size:clamp(15px,1.25vw,24px);
+  font-size:clamp(15px,20px,24px);
   font-weight:950;
   transform:rotate(29deg);
 }
@@ -3986,7 +3987,7 @@ svg{
   align-items:center;
   padding:10px 14px;
   color:var(--blue);
-  font-size:clamp(10px,.74vw,13.5px);
+  font-size:clamp(10px,11.84px,13.5px);
   line-height:1.08;
   font-weight:800;
 }
@@ -4039,14 +4040,14 @@ svg{
 .case-board-row h4{
   margin:0 0 4px;
   color:var(--blue);
-  font-size:clamp(12px,.92vw,17px);
+  font-size:clamp(12px,14.72px,17px);
   line-height:1.04;
   font-weight:950;
 }
 .case-board-row p{
   margin:0;
   color:#333;
-  font-size:clamp(10px,.74vw,13.5px);
+  font-size:clamp(10px,11.84px,13.5px);
   line-height:1.14;
   font-weight:700;
 }
@@ -4143,7 +4144,7 @@ svg{
   border:1px solid rgba(212,160,23,.22);
   border-radius:999px;
   padding:7px 10px;
-  font-size:clamp(7.5px,.54vw,10px);
+  font-size:clamp(7.5px,8.64px,10px);
   line-height:1;
   font-weight:950;
   letter-spacing:.7px;
@@ -4173,7 +4174,7 @@ svg{
   z-index:1;
   margin:0;
   color:var(--blue);
-  font-size:clamp(16px,1.18vw,23px);
+  font-size:clamp(16px,18.88px,23px);
   line-height:1.02;
   font-weight:950;
   white-space:nowrap;
@@ -4183,7 +4184,7 @@ svg{
   z-index:1;
   margin:10px 0 0;
   color:#555;
-  font-size:clamp(10.8px,.78vw,14.5px);
+  font-size:clamp(10.8px,12.48px,14.5px);
   line-height:1.08;
   font-weight:760;
 }
@@ -4245,7 +4246,7 @@ svg{
 .structure-factor h4{
   margin:0 0 7px;
   color:var(--gold);
-  font-size:clamp(10.5px,.76vw,14.5px);
+  font-size:clamp(10.5px,12.16px,14.5px);
   line-height:1.05;
   font-weight:950;
   text-shadow:0 1px 10px rgba(212,160,23,.24);
@@ -4253,7 +4254,7 @@ svg{
 .structure-factor p{
   margin:0;
   color:white;
-  font-size:clamp(9.2px,.64vw,12.2px);
+  font-size:clamp(9.2px,10.24px,12.2px);
   line-height:1.1;
   font-weight:800;
 }
@@ -4271,7 +4272,7 @@ svg{
     linear-gradient(135deg,rgba(11,45,92,.97),rgba(22,67,116,.92));
   border-width:2px;
   box-shadow:0 20px 42px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.2);
-  font-size:clamp(15px,1.05vw,21px);
+  font-size:clamp(15px,16.8px,21px);
 }
 .structure-slide .case-takeaway-icon{
   width:56px;
@@ -4319,7 +4320,7 @@ svg{
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:clamp(14px,1.02vw,20px);
+  font-size:clamp(14px,16.32px,20px);
   font-weight:950;
   letter-spacing:.2px;
   white-space:nowrap;
@@ -4358,7 +4359,7 @@ svg{
 }
 .premium-value{
   color:var(--gold);
-  font-size:clamp(30px,2.22vw,43px);
+  font-size:clamp(30px,35.52px,43px);
   line-height:.95;
   font-weight:950;
   position:relative;
@@ -4408,14 +4409,14 @@ svg{
 .premium-label{
   margin-top:5px;
   color:var(--blue);
-  font-size:clamp(12px,.92vw,17px);
+  font-size:clamp(12px,14.72px,17px);
   line-height:1.05;
   font-weight:950;
 }
 .premium-copy{
   margin:0;
   color:#333;
-  font-size:clamp(11px,.8vw,15px);
+  font-size:clamp(11px,12.8px,15px);
   line-height:1.12;
   font-weight:720;
 }
@@ -4427,7 +4428,7 @@ svg{
 }
 .premium-board-note{
   color:var(--blue);
-  font-size:clamp(11.5px,.84vw,16px);
+  font-size:clamp(11.5px,13.44px,16px);
   line-height:1.12;
   font-weight:850;
   align-self:end;
@@ -4456,7 +4457,7 @@ svg{
 .gap-eyebrow{
   display:block;
   color:#6b6b6b;
-  font-size:clamp(7.2px,.5vw,9.5px);
+  font-size:clamp(7.2px,8px,9.5px);
   line-height:1;
   font-weight:900;
   letter-spacing:.65px;
@@ -4466,7 +4467,7 @@ svg{
   display:block;
   margin-top:3px;
   color:var(--blue);
-  font-size:clamp(15px,1.08vw,20px);
+  font-size:clamp(15px,17.28px,20px);
   line-height:1;
   font-weight:950;
 }
@@ -4476,7 +4477,7 @@ svg{
   border:1px solid rgba(201,29,36,.14);
   border-radius:999px;
   padding:6px 9px;
-  font-size:clamp(7.2px,.5vw,9.5px);
+  font-size:clamp(7.2px,8px,9.5px);
   line-height:1;
   font-weight:950;
   white-space:nowrap;
@@ -4577,7 +4578,7 @@ svg{
   position:absolute;
   width:24%;
   text-align:right;
-  font-size:clamp(7px,.48vw,9.2px);
+  font-size:clamp(7px,7.68px,9.2px);
   line-height:1;
   font-weight:950;
   opacity:0;
@@ -4591,7 +4592,7 @@ svg{
   display:flex;
   justify-content:space-between;
   color:var(--blue);
-  font-size:clamp(8.4px,.58vw,11.2px);
+  font-size:clamp(8.4px,9.28px,11.2px);
   line-height:1.05;
   font-weight:850;
   padding:0 7px;
@@ -4618,7 +4619,7 @@ svg{
   justify-content:center;
   text-align:center;
   padding:5px 12px;
-  font-size:clamp(8.4px,.58vw,11.2px);
+  font-size:clamp(8.4px,9.28px,11.2px);
   line-height:1;
   font-weight:850;
   white-space:nowrap;
@@ -4635,7 +4636,7 @@ svg{
   gap:12px;
   padding:8px 24px 8px 16px;
   border-radius:18px;
-  font-size:clamp(17px,1.24vw,24px);
+  font-size:clamp(17px,19.84px,24px);
 }
 .premium-slide .case-takeaway-icon{
   width:44px;
@@ -4716,7 +4717,7 @@ svg{
   color:white;
   display:grid;
   place-items:center;
-  font-size:clamp(10px,.72vw,13.5px);
+  font-size:clamp(10px,11.52px,13.5px);
   font-weight:950;
   box-shadow:0 0 0 5px rgba(11,45,92,.08);
 }
@@ -4739,14 +4740,14 @@ svg{
 .console-action h3{
   margin:0 0 4px;
   color:var(--blue);
-  font-size:clamp(13px,.94vw,18px);
+  font-size:clamp(13px,15.04px,18px);
   line-height:1.03;
   font-weight:950;
 }
 .console-action p{
   margin:0;
   color:#555;
-  font-size:clamp(9.8px,.7vw,13px);
+  font-size:clamp(9.8px,11.2px,13px);
   line-height:1.06;
   font-weight:750;
 }
@@ -4793,7 +4794,7 @@ svg{
 }
 .console-side h3{
   margin:0;
-  font-size:clamp(15px,1.1vw,22px);
+  font-size:clamp(15px,17.6px,22px);
   line-height:1.08;
   font-weight:950;
 }
@@ -4807,7 +4808,7 @@ svg{
 }
 .console-side p{
   margin:0;
-  font-size:clamp(16.5px,1.22vw,24px);
+  font-size:clamp(16.5px,19.52px,24px);
   line-height:1.08;
   font-weight:900;
 }
@@ -4817,7 +4818,7 @@ svg{
   grid-template-columns:48px 1fr;
   gap:14px;
   padding:8px 24px 8px 18px;
-  font-size:clamp(16px,1.14vw,22px);
+  font-size:clamp(16px,18.24px,22px);
 }
 .case-console-slide .case-takeaway-icon{
   width:48px;
@@ -4874,7 +4875,7 @@ svg{
   grid-template-columns:50px 1fr;
   gap:15px;
   padding:9px 26px 9px 18px;
-  font-size:clamp(16px,1.12vw,22px);
+  font-size:clamp(16px,17.92px,22px);
 }
 .gov-slide .case-takeaway-icon{
   width:50px;
@@ -4932,7 +4933,7 @@ svg{
 .deck-card h3{
   margin:0 0 18px;
   color:white;
-  font-size:clamp(19px,1.28vw,25px);
+  font-size:clamp(19px,20.48px,25px);
   line-height:1;
   font-weight:950;
   white-space:nowrap;
@@ -4940,7 +4941,7 @@ svg{
 .deck-card p{
   margin:0;
   color:rgba(255,255,255,.82);
-  font-size:clamp(15px,1.05vw,20px);
+  font-size:clamp(15px,16.8px,20px);
   line-height:1.1;
   font-weight:800;
 }
@@ -4954,7 +4955,7 @@ svg{
   border:1px dashed rgba(212,160,23,.46);
   color:rgba(255,255,255,.86);
   padding:13px 12px;
-  font-size:clamp(13px,.94vw,18px);
+  font-size:clamp(13px,15.04px,18px);
   line-height:1.04;
   font-weight:900;
   text-align:center;
@@ -5065,7 +5066,7 @@ svg{
 .report-head h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(25px,1.82vw,36px);
+  font-size:clamp(25px,29.12px,36px);
   line-height:1.04;
   font-weight:950;
   white-space:nowrap;
@@ -5080,7 +5081,7 @@ svg{
   background:rgba(201,29,36,.07);
   border-radius:999px;
   padding:10px 16px;
-  font-size:clamp(12px,.88vw,17px);
+  font-size:clamp(12px,14.08px,17px);
   line-height:1;
   font-weight:950;
   text-transform:uppercase;
@@ -5101,7 +5102,7 @@ svg{
   background:rgba(11,45,92,.06);
   padding:17px 16px;
   color:var(--blue);
-  font-size:clamp(16px,1.12vw,21px);
+  font-size:clamp(16px,17.92px,21px);
   line-height:1;
   font-weight:900;
   opacity:0;
@@ -5118,7 +5119,7 @@ svg{
   border-left:5px solid var(--gold);
   padding:12px 13px;
   color:#444;
-  font-size:clamp(14px,.98vw,18.5px);
+  font-size:clamp(14px,15.68px,18.5px);
   line-height:1.04;
   font-weight:800;
   opacity:0;
@@ -5162,7 +5163,7 @@ svg{
   grid-template-columns:58px 1fr;
   gap:18px;
   padding:11px 30px 11px 20px;
-  font-size:clamp(20px,1.38vw,27px);
+  font-size:clamp(20px,22.08px,27px);
   border-radius:20px;
   background:
     radial-gradient(circle at 5% 50%,rgba(212,160,23,.28),transparent 16%),
@@ -5220,7 +5221,7 @@ svg{
   position:relative;
   z-index:1;
   margin:0 0 14px;
-  font-size:clamp(22px,1.52vw,30px);
+  font-size:clamp(22px,24.32px,30px);
   line-height:1.02;
   font-weight:950;
 }
@@ -5232,7 +5233,7 @@ svg{
   z-index:1;
   margin:0;
   color:rgba(255,255,255,.84);
-  font-size:clamp(15px,1.04vw,20px);
+  font-size:clamp(15px,16.64px,20px);
   line-height:1.08;
   font-weight:800;
 }
@@ -5249,7 +5250,7 @@ svg{
   border:1px dashed rgba(212,160,23,.45);
   padding:14px 15px;
   color:rgba(255,255,255,.9);
-  font-size:clamp(14px,.98vw,19px);
+  font-size:clamp(14px,15.68px,19px);
   line-height:1.05;
   font-weight:900;
   text-align:center;
@@ -5286,7 +5287,7 @@ svg{
   text-align:center;
   color:var(--blue);
   box-shadow:0 16px 32px rgba(0,0,0,.12),0 0 0 8px rgba(212,160,23,.08);
-  font-size:clamp(12.5px,.88vw,16.5px);
+  font-size:clamp(12.5px,14.08px,16.5px);
   line-height:1.08;
   font-weight:950;
 }
@@ -5359,14 +5360,14 @@ svg{
 .ownership-signal h3{
   margin:0 0 6px;
   color:var(--blue);
-  font-size:clamp(17px,1.18vw,23px);
+  font-size:clamp(17px,18.88px,23px);
   line-height:1.02;
   font-weight:950;
 }
 .ownership-signal p{
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(12.6px,.88vw,16.5px);
+  font-size:clamp(12.6px,14.08px,16.5px);
   line-height:1.06;
   font-weight:790;
 }
@@ -5428,7 +5429,7 @@ svg{
   position:relative;
   z-index:1;
   margin:0;
-  font-size:clamp(23px,1.58vw,31px);
+  font-size:clamp(23px,25.28px,31px);
   line-height:1.05;
   font-weight:950;
 }
@@ -5438,7 +5439,7 @@ svg{
   z-index:1;
   margin:0;
   color:rgba(255,255,255,.84);
-  font-size:clamp(15px,1.02vw,20px);
+  font-size:clamp(15px,16.32px,20px);
   line-height:1.09;
   font-weight:800;
 }
@@ -5507,14 +5508,14 @@ svg{
 .check-row h3{
   margin:0;
   color:var(--blue);
-  font-size:clamp(14px,.98vw,18.5px);
+  font-size:clamp(14px,15.68px,18.5px);
   line-height:1.04;
   font-weight:950;
 }
 .check-row p{
   margin:0;
   color:#444;
-  font-size:clamp(11.6px,.8vw,15px);
+  font-size:clamp(11.6px,12.8px,15px);
   line-height:1.05;
   font-weight:780;
 }
@@ -5524,7 +5525,7 @@ svg{
   color:var(--blue);
   padding:7px 9px;
   text-align:center;
-  font-size:clamp(10px,.7vw,13px);
+  font-size:clamp(10px,11.2px,13px);
   line-height:1.04;
   font-weight:900;
   white-space:nowrap;
@@ -5549,7 +5550,7 @@ svg{
   grid-template-columns:56px 1fr;
   gap:18px;
   padding:10px 30px 10px 20px;
-  font-size:clamp(19px,1.32vw,26px);
+  font-size:clamp(19px,21.12px,26px);
   border-radius:20px;
 }
 .scenario-slide .case-takeaway-icon{
@@ -5617,7 +5618,7 @@ svg{
 }
 .scenario-card h3{
   margin:0;
-  font-size:clamp(21px,1.48vw,30px);
+  font-size:clamp(21px,23.68px,30px);
   line-height:1;
   font-weight:950;
 }
@@ -5629,7 +5630,7 @@ svg{
   padding:8px 13px;
   color:white;
   background:var(--blue);
-  font-size:clamp(12px,.84vw,16.5px);
+  font-size:clamp(12px,13.44px,16.5px);
   font-weight:950;
   box-shadow:0 10px 18px color-mix(in srgb,var(--scenario-color,var(--blue)) 26%,transparent);
 }
@@ -5641,7 +5642,7 @@ svg{
   min-height:42px;
   margin:0 0 12px;
   color:#444;
-  font-size:clamp(13px,.9vw,17px);
+  font-size:clamp(13px,14.4px,17px);
   line-height:1.08;
   font-weight:780;
 }
@@ -5681,7 +5682,7 @@ svg{
   margin-top:10px;
   border-radius:13px;
   padding:9px 12px;
-  font-size:clamp(11.5px,.8vw,15px);
+  font-size:clamp(11.5px,12.8px,15px);
   line-height:1.08;
   font-weight:900;
 }
@@ -5715,7 +5716,7 @@ svg{
 .formula-piece small{
   display:block;
   color:#666;
-  font-size:clamp(9.6px,.68vw,13px);
+  font-size:clamp(9.6px,10.88px,13px);
   line-height:1;
   text-transform:uppercase;
   letter-spacing:.7px;
@@ -5724,7 +5725,7 @@ svg{
 .formula-piece strong{
   display:block;
   margin-top:5px;
-  font-size:clamp(18px,1.28vw,25px);
+  font-size:clamp(18px,20.48px,25px);
   line-height:1;
   font-weight:950;
 }
@@ -5732,7 +5733,7 @@ svg{
   position:relative;
   z-index:1;
   color:var(--gold);
-  font-size:clamp(25px,1.9vw,38px);
+  font-size:clamp(25px,30.4px,38px);
   line-height:1;
   font-weight:950;
 }
@@ -5762,7 +5763,7 @@ svg{
   grid-template-columns:56px 1fr;
   gap:18px;
   padding:10px 30px 10px 20px;
-  font-size:clamp(18px,1.28vw,25px);
+  font-size:clamp(18px,20.48px,25px);
   border-radius:20px;
   background:
     radial-gradient(circle at 5% 50%,rgba(212,160,23,.28),transparent 16%),
@@ -5838,7 +5839,7 @@ svg{
   position:relative;
   z-index:1;
   color:#666;
-  font-size:clamp(9.8px,.68vw,13px);
+  font-size:clamp(9.8px,10.88px,13px);
   text-transform:uppercase;
   letter-spacing:.7px;
   font-weight:950;
@@ -5848,7 +5849,7 @@ svg{
   z-index:1;
   margin:8px 0;
   color:var(--blue);
-  font-size:clamp(18px,1.26vw,25px);
+  font-size:clamp(18px,20.16px,25px);
   line-height:1.02;
   font-weight:950;
 }
@@ -5857,7 +5858,7 @@ svg{
   z-index:1;
   margin:0;
   color:#454545;
-  font-size:clamp(12px,.84vw,16px);
+  font-size:clamp(12px,13.44px,16px);
   line-height:1.08;
   font-weight:780;
 }
@@ -5921,14 +5922,14 @@ svg{
 .logic-lever h3{
   margin:0 0 5px;
   color:var(--blue);
-  font-size:clamp(15px,1.05vw,20px);
+  font-size:clamp(15px,16.8px,20px);
   line-height:1;
   font-weight:950;
 }
 .logic-lever p{
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(10.8px,.76vw,14px);
+  font-size:clamp(10.8px,12.16px,14px);
   line-height:1.06;
   font-weight:780;
 }
@@ -5994,7 +5995,7 @@ svg{
   border-radius:16px;
   color:white;
   background:linear-gradient(135deg,var(--blue),#164374);
-  font-size:clamp(15px,1.08vw,21px);
+  font-size:clamp(15px,17.28px,21px);
   font-weight:950;
   box-shadow:0 14px 26px rgba(11,45,92,.18);
   opacity:0;
@@ -6037,7 +6038,7 @@ svg{
   z-index:1;
   margin:0 0 4px;
   color:var(--blue);
-  font-size:clamp(13px,.92vw,18px);
+  font-size:clamp(13px,14.72px,18px);
   line-height:1.02;
   font-weight:950;
 }
@@ -6046,7 +6047,7 @@ svg{
   z-index:1;
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(10.5px,.72vw,13.8px);
+  font-size:clamp(10.5px,11.52px,13.8px);
   line-height:1.06;
   font-weight:760;
 }
@@ -6061,7 +6062,7 @@ svg{
   place-items:center;
   background:rgba(212,160,23,.12);
   color:var(--cell-color,var(--gold));
-  font-size:clamp(15px,1.08vw,22px);
+  font-size:clamp(15px,17.28px,22px);
   font-weight:950;
 }
 .control-dot::after{
@@ -6129,7 +6130,7 @@ svg{
 }
 .quarter-label{
   color:var(--blue);
-  font-size:clamp(15px,1.08vw,21px);
+  font-size:clamp(15px,17.28px,21px);
   font-weight:950;
 }
 .quarter{
@@ -6140,7 +6141,7 @@ svg{
   place-items:center;
   color:var(--blue);
   background:rgba(11,45,92,.07);
-  font-size:clamp(10px,.72vw,13.5px);
+  font-size:clamp(10px,11.52px,13.5px);
   font-weight:950;
   overflow:hidden;
   opacity:0;
@@ -6202,14 +6203,14 @@ svg{
 .kpi-copy h3{
   margin:0 0 3px;
   color:var(--blue);
-  font-size:clamp(14px,.94vw,18px);
+  font-size:clamp(14px,15.04px,18px);
   line-height:1;
   font-weight:950;
 }
 .kpi-copy p{
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(9.5px,.64vw,12.2px);
+  font-size:clamp(9.5px,10.24px,12.2px);
   line-height:1.04;
   font-weight:760;
 }
@@ -6237,7 +6238,7 @@ svg{
   padding:7px 6px;
   text-align:center;
   color:white;
-  font-size:clamp(9.2px,.64vw,12px);
+  font-size:clamp(9.2px,10.24px,12px);
   line-height:1;
   font-weight:950;
   background:var(--kpi-color,var(--blue));
@@ -6248,7 +6249,7 @@ svg{
   min-height:64px;
   grid-template-columns:50px 1fr;
   padding:8px 28px 8px 17px;
-  font-size:clamp(19px,1.32vw,26px);
+  font-size:clamp(19px,21.12px,26px);
 }
 .account-slide .case-takeaway-icon{
   width:50px;
@@ -6274,7 +6275,7 @@ svg{
   z-index:1;
   margin:0 0 9px;
   color:var(--blue);
-  font-size:clamp(18px,1.24vw,24px);
+  font-size:clamp(18px,19.84px,24px);
   line-height:1;
   font-weight:950;
 }
@@ -6303,14 +6304,14 @@ svg{
 .signal-rule strong{
   display:block;
   color:var(--blue);
-  font-size:clamp(12px,.82vw,16px);
+  font-size:clamp(12px,13.12px,16px);
   line-height:1;
   margin-bottom:5px;
 }
 .signal-rule p{
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(9.6px,.66vw,12.5px);
+  font-size:clamp(9.6px,10.56px,12.5px);
   line-height:1.06;
   font-weight:760;
 }
@@ -6322,7 +6323,7 @@ svg{
   padding:9px 11px;
   color:var(--blue);
   background:rgba(212,160,23,.12);
-  font-size:clamp(10.5px,.72vw,13.8px);
+  font-size:clamp(10.5px,11.52px,13.8px);
   line-height:1.08;
   font-weight:900;
 }
@@ -6348,14 +6349,14 @@ svg{
   color:var(--blue);
   background:rgba(212,160,23,.22);
   border:1.5px solid rgba(212,160,23,.62);
-  font-size:clamp(10px,.7vw,13px);
+  font-size:clamp(10px,11.2px,13px);
   font-weight:950;
   box-shadow:0 0 0 7px rgba(212,160,23,.08);
 }
 .audit-note strong{
   display:block;
   color:var(--blue);
-  font-size:clamp(11.5px,.8vw,15.5px);
+  font-size:clamp(11.5px,12.8px,15.5px);
   line-height:1;
   margin-bottom:4px;
   font-weight:950;
@@ -6363,7 +6364,7 @@ svg{
 .audit-note p{
   margin:0;
   color:#4b4b4b;
-  font-size:clamp(9.4px,.64vw,12px);
+  font-size:clamp(9.4px,10.24px,12px);
   line-height:1.05;
   font-weight:780;
 }
@@ -6396,11 +6397,11 @@ svg{
 /* Slide 24 */
 .conclusion-slide .case-title{
   max-width:82%;
-  font-size:clamp(31px,2.62vw,51px);
+  font-size:clamp(31px,41.92px,51px);
 }
 .conclusion-slide .case-subtitle{
   max-width:84%;
-  font-size:clamp(13.5px,1.02vw,19px);
+  font-size:clamp(13.5px,16.32px,19px);
 }
 .conclusion-stage{
   position:absolute;
@@ -6441,8 +6442,8 @@ svg{
   position:absolute;
   left:50%;
   top:50%;
-  width:clamp(250px,17vw,330px);
-  min-height:clamp(102px,7vw,136px);
+  width:clamp(250px,272px,330px);
+  min-height:clamp(102px,112px,136px);
   transform:translate(-50%,-50%) scale(.92);
   border-radius:28px;
   display:grid;
@@ -6460,7 +6461,7 @@ svg{
 .loop-core small{
   display:block;
   color:var(--gold);
-  font-size:clamp(10px,.74vw,14px);
+  font-size:clamp(10px,11.84px,14px);
   line-height:1;
   text-transform:uppercase;
   letter-spacing:.8px;
@@ -6470,21 +6471,21 @@ svg{
   display:block;
   margin:8px 0 6px;
   color:white;
-  font-size:clamp(25px,1.78vw,34px);
+  font-size:clamp(25px,28.48px,34px);
   line-height:.98;
   font-weight:950;
 }
 .loop-core span{
   display:block;
   color:rgba(255,255,255,.86);
-  font-size:clamp(11px,.78vw,15px);
+  font-size:clamp(11px,12.48px,15px);
   line-height:1.05;
   font-weight:820;
 }
 .takeaway-node{
   position:absolute;
-  width:clamp(142px,9.4vw,184px);
-  min-height:clamp(72px,4.9vw,94px);
+  width:clamp(142px,150.4px,184px);
+  min-height:clamp(72px,78.4px,94px);
   display:grid;
   grid-template-columns:42px 1fr;
   gap:10px;
@@ -6538,7 +6539,7 @@ svg{
 .node-copy small{
   display:block;
   color:var(--gold);
-  font-size:clamp(9px,.62vw,12px);
+  font-size:clamp(9px,9.92px,12px);
   line-height:1;
   font-weight:950;
 }
@@ -6546,7 +6547,7 @@ svg{
   display:block;
   margin-top:4px;
   color:var(--blue);
-  font-size:clamp(13.5px,.92vw,18px);
+  font-size:clamp(13.5px,14.72px,18px);
   line-height:1.02;
   font-weight:950;
 }
@@ -6558,7 +6559,7 @@ svg{
   grid-template-columns:50px 1fr;
   gap:16px;
   padding:8px 30px 8px 18px;
-  font-size:clamp(18px,1.28vw,25px);
+  font-size:clamp(18px,20.48px,25px);
   border-radius:19px;
 }
 .conclusion-slide .case-takeaway-icon{
@@ -6588,7 +6589,7 @@ svg{
 }
 .closing-main{
   display:grid;
-  grid-template-columns:minmax(0,1fr) clamp(500px,31vw,610px);
+  grid-template-columns:minmax(0,1fr) clamp(500px,496px,610px);
   gap:30px;
   align-items:stretch;
   min-height:0;
@@ -6614,7 +6615,7 @@ svg{
 }
 .closing-kicker{
   color:var(--gold);
-  font-size:clamp(12px,.82vw,15px);
+  font-size:clamp(12px,13.12px,15px);
   letter-spacing:1.1px;
   text-transform:uppercase;
   font-weight:950;
@@ -6625,7 +6626,7 @@ svg{
   position:relative;
   margin-top:7px;
   color:var(--blue);
-  font-size:clamp(38px,3.12vw,61px);
+  font-size:clamp(38px,49.92px,61px);
   line-height:.96;
   font-weight:950;
   letter-spacing:0;
@@ -6634,7 +6635,7 @@ svg{
 }
 .closing-line.gold{
   color:var(--gold);
-  font-size:clamp(40px,3.2vw,63px);
+  font-size:clamp(40px,51.2px,63px);
   text-shadow:0 10px 25px rgba(212,160,23,.22);
 }
 .closing-underline{
@@ -6669,7 +6670,7 @@ svg{
   z-index:1;
   margin:0;
   color:var(--blue);
-  font-size:clamp(22px,1.48vw,29px);
+  font-size:clamp(22px,23.68px,29px);
   line-height:1;
   font-weight:950;
 }
@@ -6693,13 +6694,13 @@ svg{
   place-items:center;
   color:white;
   background:var(--blue);
-  font-size:clamp(10px,.7vw,12.5px);
+  font-size:clamp(10px,11.2px,12.5px);
   font-weight:950;
   box-shadow:0 0 0 5px rgba(212,160,23,.09);
 }
 .closing-item strong{
   color:var(--blue);
-  font-size:clamp(14.5px,.98vw,19px);
+  font-size:clamp(14.5px,15.68px,19px);
   line-height:1.05;
   font-weight:950;
 }
@@ -6730,12 +6731,12 @@ svg{
   place-items:center;
   color:var(--gold);
   border:1.5px solid rgba(212,160,23,.62);
-  font-size:clamp(10.5px,.72vw,13px);
+  font-size:clamp(10.5px,11.52px,13px);
   font-weight:950;
 }
 .strip-step strong{
   display:block;
-  font-size:clamp(9.5px,.66vw,12px);
+  font-size:clamp(9.5px,10.56px,12px);
   line-height:1;
   font-weight:950;
 }
@@ -6743,13 +6744,13 @@ svg{
   display:block;
   margin-top:2px;
   color:var(--gold);
-  font-size:clamp(8px,.54vw,10px);
+  font-size:clamp(8px,8.64px,10px);
   line-height:1;
   font-weight:900;
 }
 .strip-arrow{
   color:var(--gold);
-  font-size:clamp(18px,1.2vw,24px);
+  font-size:clamp(18px,19.2px,24px);
   font-weight:950;
   text-align:center;
   opacity:.9;
@@ -9437,6 +9438,24 @@ const pageTotal = document.getElementById("pageTotal");
 let current = 0;
 pageTotal.textContent = slides.length;
 
+// Keep the original 16:9 slide as one fixed design canvas and scale the
+// entire canvas—including text, icons, spacing, and backgrounds—uniformly.
+function updateDeckScale(){
+  const designWidth = 1504;
+  const designHeight = 846;
+  const availableWidth = window.innerWidth * 0.94;
+  const availableHeight = window.innerHeight * 0.88;
+  const scale = Math.min(1, availableWidth / designWidth, availableHeight / designHeight);
+
+  document.querySelectorAll(".canvas").forEach(function(canvas){
+    canvas.style.transform = `scale(${scale})`;
+  });
+}
+
+updateDeckScale();
+window.addEventListener("resize", updateDeckScale);
+window.addEventListener("orientationchange", updateDeckScale);
+
 function easeOutCubic(t){
   return 1 - Math.pow(1 - t, 3);
 }
@@ -9508,6 +9527,30 @@ document.addEventListener("keydown", function(event){
     showSlide(current - 1);
   }
 });
+
+// Mobile navigation: swipe left for the next slide and right for the previous.
+let touchStartX = 0;
+let touchStartY = 0;
+
+document.addEventListener("touchstart", function(event){
+  const touch = event.changedTouches[0];
+  touchStartX = touch.clientX;
+  touchStartY = touch.clientY;
+}, {passive:true});
+
+document.addEventListener("touchend", function(event){
+  const touch = event.changedTouches[0];
+  const deltaX = touch.clientX - touchStartX;
+  const deltaY = touch.clientY - touchStartY;
+
+  if(Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+
+  if(deltaX < 0 && current < slides.length - 1){
+    showSlide(current + 1);
+  }else if(deltaX > 0 && current > 0){
+    showSlide(current - 1);
+  }
+}, {passive:true});
 // ================= DECK NAVIGATION JS END =================
 </script>
 
