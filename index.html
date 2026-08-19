@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>AI Valuation and Governance in M&A</title>
+<link rel="icon" href="data:," />
 
 <style>
 /* ================= ALL CSS START ================= */
@@ -9443,9 +9444,11 @@ pageTotal.textContent = slides.length;
 function updateDeckScale(){
   const designWidth = 1504;
   const designHeight = 846;
-  const availableWidth = window.innerWidth * 0.94;
-  const availableHeight = window.innerHeight * 0.88;
-  const scale = Math.min(1, availableWidth / designWidth, availableHeight / designHeight);
+  const viewportWidth = window.visualViewport ? window.visualViewport.width : document.documentElement.clientWidth || window.innerWidth;
+  const viewportHeight = window.visualViewport ? window.visualViewport.height : document.documentElement.clientHeight || window.innerHeight;
+  const availableWidth = viewportWidth * 0.94;
+  const availableHeight = viewportHeight * 0.88;
+  const scale = Math.min(availableWidth / designWidth, availableHeight / designHeight);
 
   document.querySelectorAll(".canvas").forEach(function(canvas){
     canvas.style.transform = `scale(${scale})`;
@@ -9455,6 +9458,9 @@ function updateDeckScale(){
 updateDeckScale();
 window.addEventListener("resize", updateDeckScale);
 window.addEventListener("orientationchange", updateDeckScale);
+if(window.visualViewport){
+  window.visualViewport.addEventListener("resize", updateDeckScale);
+}
 
 function easeOutCubic(t){
   return 1 - Math.pow(1 - t, 3);
